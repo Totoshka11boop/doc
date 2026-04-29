@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗооДоктор - Блог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><i class="fas fa-paw"></i> ЗооДоктор</a></div>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="catalog.html">Услуги</a></li>
+                    <li><a href="blog.html" class="active">Блог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Политика</a></li>
+                    <li><a href="sitemap.html">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Полезные статьи от ветеринаров</h1>
+        <div class="blog-grid">
+            <div class="blog-card"><img src="img/кошка.jpg" alt="Кошка у ветеринара">
+                <div class="content">
+                    <h3>Как подготовить кошку к визиту к врачу</h3>
+                    <div class="meta"><i class="fas fa-calendar"></i> 10 апреля 2025 | <i class="fas fa-user-md"></i>
+                        Др. Соколова</div>
+                    <p>Кошки испытывают сильный стресс при поездках. Рассказываем, как приучить к переноске, какие
+                        феромоны использовать и когда лучше записываться на приём, чтобы минимизировать тревогу питомца.
+                    </p>
+                    <p><strong>Совет:</strong> не кормите кошку за 3-4 часа до визита, если планируются анализы крови.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card"><img src="img/собака.jpg" alt="Вакцинация собаки">
+                <div class="content">
+                    <h3>Вакцинация собак и кошек: мифы и правда</h3>
+                    <div class="meta"><i class="fas fa-calendar"></i> 5 апреля 2025 | <i class="fas fa-user-md"></i> Др.
+                        Морозов</div>
+                    <p>Разбираем популярные страхи: вызывает ли прививка болезнь, нужна ли ежегодная ревакцинация и что
+                        делать, если питомец аллергик. Приводим данные исследований о продолжительности иммунитета.</p>
+                    <p><strong>Важно:</strong> непривитые животные подвержены смертельным инфекциям — чумке,
+                        парвовирусному энтериту, бешенству.</p>
+                </div>
+            </div>
+            <div class="blog-card"><img src="img/соббббака.jpg" alt="Первая помощь собаке">
+                <div class="content">
+                    <h3>Первая помощь при отравлении: что можно сделать дома</h3>
+                    <div class="meta"><i class="fas fa-calendar"></i> 1 апреля 2025 | <i class="fas fa-user-md"></i> Др.
+                        Ветрова</div>
+                    <p>Собака съела яд или лекарство? Алгоритм действий: как вызвать рвоту, когда давать сорбенты, а
+                        когда — срочно везти в клинику. Перечень самых опасных для животных веществ (шоколад, изюм,
+                        ксилит, крысиный яд).</p>
+                    <p><strong>Предупреждение:</strong> при отравлении изониазидом нужен антидот в течение 30 минут!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>ЗооДоктор</h4>
+                    <p>Ветеринарная клиника полного цикла</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Зоологическая, 12</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone-alt"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@zoodoctor.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <p>Ежедневно 09:00 - 21:00</p>
+                    <p>Круглосуточная поддержка</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">&copy; 2025 ВетКлиника ЗооДоктор. Забота о ваших питомцах.
+            </div>
+        </div>
+    </footer>
+    <script>docume
+            < script >
+            document.getElementById('navToggle')?.addEventListener('click', () => document.getElementById('navMenu').classList.toggle('show'));
+        document.getElementById('subscribeForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('subMsg').innerHTML = '<span style="color:#2c7a4d;">Спасибо! Вы подписаны на рассылку.</span>';
+            e.target.reset();
+        });
+    </script>
+</body>
+
+</html>
